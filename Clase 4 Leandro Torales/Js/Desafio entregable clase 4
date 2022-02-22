@@ -1,0 +1,72 @@
+//Bienvenida al usuario y se imprime por alert
+let nombreUsuario = prompt("Hola, dinos tu nombre por favor");
+if (nombreUsuario != ""){
+    alert(`Bienvenido, ${nombreUsuario}`+" :)")
+}
+
+//Se crean las estadisticas que en un futuro se van a modificar
+let ritmo = 0;
+let regate = 0;
+let tiro = 0;
+let pase = 0;
+let fisico = 0;
+let defensa = 0;
+
+//Se le pide al usuario un jugador a elegir
+let entradaJugador = prompt(`${nombreUsuario}, te pediremos a continuacion un jugador de futbol, tienes para elegir estos 5 jugadores:\nLeonel Messi \nCristiano Ronaldo \nRaheem Sterling \nPhil Foden \nVinicius Junior`);
+
+//Se imprime el equipo y estadísticas del jugador elegido mediante el algoritmo switch
+if(entradaJugador != "" && entradaJugador == "Leonel Messi", "Cristiano Ronaldo", "Raheem Sterling", "Phil Foden", "Vinicius Junior"){
+    switch(entradaJugador){
+        case "Leonel Messi":
+            equipoJugador = "Paris Saint-Germain";
+            ritmo = 91;
+            regate = 96;
+            tiro = 95;
+            pase = 92;
+            fisico = 82;
+            defensa = 39;
+                alert(`Las estadisticas de tu jugador son:\nEquipo: ${equipoJugador}\nRitmo: ${ritmo}\nRegate: ${regate}\nTiro: ${tiro}\nPase: ${pase}\nFisico: ${fisico}\nDefensa: ${defensa}`);
+                    break;
+        case "Cristiano Ronaldo":
+            equipoJugador = "Manchester United";
+            ritmo = 93;
+            regate = 89;
+            tiro = 93;
+            pase = 85;
+            fisico = 89;
+            defensa = 47;
+                alert(`Las estadisticas de tu jugador son:\nEquipo: ${equipoJugador}\nRitmo: ${ritmo}\nRegate: ${regate}\nTiro: ${tiro}\nPase: ${pase}\nFisico: ${fisico}\nDefensa: ${defensa}`);
+                    break;
+        case "Raheem Sterling":
+            equipoJugador = "Manchester City";
+            ritmo = 97;
+            regate = 86;
+            tiro = 84;
+            pase = 81;
+            fisico = 80;
+            defensa = 42;
+                alert(`Las estadisticas de tu jugador son:\nEquipo: ${equipoJugador}\nRitmo: ${ritmo}\nRegate: ${regate}\nTiro: ${tiro}\nPase: ${pase}\nFisico: ${fisico}\nDefensa: ${defensa}`);
+                    break;
+        case "Phil Foden":
+            equipoJugador = "Manchester City";
+            ritmo = 83;
+            regate = 92;
+            tiro = 83;
+            pase = 87;
+            fisico = 79;
+            defensa = 58;
+                alert(`Las estadisticas de tu jugador son:\nEquipo: ${equipoJugador}\nRitmo: ${ritmo}\nRegate: ${regate}\nTiro: ${tiro}\nPase: ${pase}\nFisico: ${fisico}\nDefensa: ${defensa}`);
+                    break;
+        case "Vinicius Junior":
+            equipoJugador = "Real Madrid";
+            ritmo = 99;
+            regate = 95;
+            tiro = 91;
+            pase = 82;
+            fisico = 39;
+            defensa = 23;
+                alert(`Las estadisticas de tu jugador son:\nEquipo: ${equipoJugador}\nRitmo: ${ritmo}\nRegate: ${regate}\nTiro: ${tiro}\nPase: ${pase}\nFisico: ${fisico}\nDefensa: ${defensa}`);
+                break;
+    }
+}
